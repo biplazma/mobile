@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1066556251837",
+    "firebase_url": "https://biplazma-9d341.firebaseio.com",
+    "project_id": "biplazma-9d341",
+    "storage_bucket": "biplazma-9d341.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066556251837:android:eb8e992eb5ca32c87021d4",
+        "android_client_info": {
+          "package_name": "com.recont.plazmabul"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066556251837-jug3tjmf8574qtq3s11i586bhj1t7t8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIyKGG6jj2xqIEWFyFxlddr6jVh6jk-cw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1066556251837-jug3tjmf8574qtq3s11i586bhj1t7t8l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
