@@ -1,13 +1,12 @@
 # BiPlazma
 
-This app can help you to for find or donate plasma.
+BiPlazma is bringing together everyone who needs plasma and who can donate plasma on one platform.
 
 ## Design
 
+![BiPlazma](https://user-images.githubusercontent.com/21019611/80645730-364bd400-8a74-11ea-9400-f1201dd2e629.png)
+
 [Figma](https://www.figma.com/file/BhroaCYjHfoBwfl0aKSlZD/PlazmaBul?node-id=2%3A4)
-
-
-
 
 ## v0.1
 - [x] Google Login
@@ -21,7 +20,7 @@ This app can help you to for find or donate plasma.
 - [x] Donate Plasm
 - [x] OnBoarding
 - [ ] Stability Tests
-- [ ] Add Mockups to Github
+- [x] Add Mockups to Github
 
 ## v0.2
 - [ ] l10n localization
