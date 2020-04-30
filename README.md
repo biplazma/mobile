@@ -12,6 +12,10 @@ BiPlazma is bringing together everyone who needs plasma and who can donate plasm
 
 Firebase Cloud Firestore
 
+## Download
+
+[Apk File](https://github.com/biplazma/mobile/raw/master/app-release.apk)
+
 ## v0.1
 - [x] Google Login
 - [x] Splash
