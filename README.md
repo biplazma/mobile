@@ -8,6 +8,10 @@ BiPlazma is bringing together everyone who needs plasma and who can donate plasm
 
 [Figma](https://www.figma.com/file/BhroaCYjHfoBwfl0aKSlZD/PlazmaBul?node-id=2%3A4)
 
+## Backend
+
+Firebase Cloud FireStore
+
 ## v0.1
 - [x] Google Login
 - [x] Splash
