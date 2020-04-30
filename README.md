@@ -10,7 +10,7 @@ BiPlazma is bringing together everyone who needs plasma and who can donate plasm
 
 ## Backend
 
-Firebase Cloud FireStore
+Firebase Cloud Firestore
 
 ## v0.1
 - [x] Google Login
