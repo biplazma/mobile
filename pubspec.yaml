@@ -28,7 +28,7 @@ dependencies:
   toast: ^0.1.5
   double_back_to_close_app: ^1.2.0
   mask_text_input_formatter: ^1.0.6
-  cached_network_image: ^2.1.0+1
+  cached_network_image: ^2.2.0
   connectivity: ^0.4.8+2
   webview_flutter: ^0.3.21
   http: ^0.12.1
