@@ -16,6 +16,7 @@ jobs:
     # Run Tests
     - run: flutter analyze
     #- run: flutter test # don't use until circular_check_box fixed
+    - run: flutter pub cache repair
     # Build Apk
     - run: flutter build apk
     # Push Apk
