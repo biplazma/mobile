@@ -10,8 +10,7 @@ jobs:
       with:
         java-version: '12.x'
     - uses: subosito/flutter-action@v1
-      with:
-        channel: 'master'
+    - run: git clone -b master https://github.com/flutter/flutter.git
     - run: flutter pub get
     # Run Tests
     - run: flutter analyze
