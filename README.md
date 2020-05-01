@@ -19,7 +19,7 @@ BiPlazma is bringing together everyone who needs plasma and who can donate plasm
 - [x] Request Plasm
 - [x] Donate Plasm
 - [x] OnBoarding
-- [ ] Stability Tests
+- [x] Stability Tests
 - [x] Add Mockups to Github
 
 ## v0.2
