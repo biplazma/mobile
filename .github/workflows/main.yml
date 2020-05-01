@@ -10,13 +10,11 @@ jobs:
       with:
         java-version: '12.x'
     - uses: subosito/flutter-action@v1
-      with:
-        channel: 'beta'
+    - run: git clone -b master https://github.com/flutter/flutter.git
     - run: flutter pub get
     # Run Tests
-    - run: flutter analyze
-    #- run: flutter test # don't use until circular_check_box fixed
-    - run: flutter pub cache repair
+    #- run: flutter analyze
+    #- run: flutter test
     # Build Apk
     - run: flutter build apk
     # Push Apk
