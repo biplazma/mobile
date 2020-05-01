@@ -34,12 +34,13 @@ class AuthService {
   }
 
   Future<String> signInWithEmailAndPassword(String fullName, String email, String password) async {
+    String userId;
     try {
       AuthResult result = await _auth.signInWithEmailAndPassword(email: email, password: password);
       if (result != null) {
         FirebaseUser user = await FirebaseAuth.instance.currentUser();
         updateLastSeen(user);
-        return user.uid;
+        userId = user.uid;
       }
     } catch (error) {
       if (error.code == "ERROR_USER_NOT_FOUND") {
@@ -48,10 +49,11 @@ class AuthService {
           FirebaseUser user = authResult.user;
           initUserData(user);
           Helper.setUserToken(authResult.user.uid);
-          return user.uid;
+          userId = user.uid;
         } catch (e) {}
       }
     }
+    return userId;
   }
 
   void initUserData(FirebaseUser user) async {
