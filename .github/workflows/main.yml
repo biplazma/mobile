@@ -13,8 +13,8 @@ jobs:
     - run: git clone -b master https://github.com/flutter/flutter.git
     - run: flutter pub get
     # Run Tests
-    - run: flutter analyze
-    - run: flutter test
+    #- run: flutter analyze
+    #- run: flutter test
     # Build Apk
     - run: flutter build apk
     # Push Apk
