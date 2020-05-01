@@ -69,7 +69,7 @@ class _LoginPageState extends State<LoginPage> {
                                         context,
                                         MaterialPageRoute(
                                             builder: (context) =>
-                                                WebViewPage('http://iamfurkan.com/projeler/biplazma/privacy-policy.html', 'Gizlilik Şartları')));
+                                                WebViewPage('https://biplazma.github.io/privacypolicy/', 'Gizlilik Şartları')));
                                   },
                               ),
                               TextSpan(text: ' ve ', style: GoogleFonts.openSans(fontSize: 12, fontWeight: FontWeight.bold)),
@@ -83,7 +83,7 @@ class _LoginPageState extends State<LoginPage> {
                                         context,
                                         MaterialPageRoute(
                                             builder: (context) =>
-                                                WebViewPage('http://iamfurkan.com/projeler/biplazma/terms-and-conditions.html', 'Kullanım Koşulları')));
+                                                WebViewPage('https://biplazma.github.io/termsandconditions/', 'Kullanım Koşulları')));
                                   },
                               ),
                               TextSpan(text: '\'nı kabul etmiş sayılacaksınız.', style: GoogleFonts.openSans(fontSize: 12, fontWeight: FontWeight.bold)),
