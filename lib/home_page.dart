@@ -83,7 +83,7 @@ class _HomePageState extends State<HomePage> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             Icon(Icons.inbox, size: 50, color: Colors.black26),
-                            Text("Veri yok!", style: Theme.of(context).textTheme.headline5),
+                            Text("Veri yok !", style: Theme.of(context).textTheme.headline5),
                           ],
                         ),
                       );
