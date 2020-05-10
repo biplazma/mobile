@@ -32,8 +32,9 @@ dependencies:
   connectivity: ^0.4.8+2
   webview_flutter: ^0.3.21
   http: ^0.12.1
-  flutter_typeahead: ^1.8.0
-  circular_check_box: ^1.0.1
+  flutter_typeahead: ^1.8.1
+  circular_check_box:
+    git: git://github.com/Adem68/circular_check_box.git
   flutter_launcher_icons: ^0.7.5
   loading_indicator: ^1.1.0
   auto_size_text: ^2.1.0
