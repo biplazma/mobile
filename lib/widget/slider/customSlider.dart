@@ -55,7 +55,6 @@ class _SliderWidgetState extends State<SliderWidget> {
                     trackHeight: 4.0,
                     thumbShape: CustomSliderThumbCircle(thumbRadius: this.widget.sliderHeight * .4, min: this.widget.min, max: this.widget.max),
                     overlayColor: Colors.white.withOpacity(.4),
-                    //valueIndicatorColor: Colors.white,
                     activeTickMarkColor: Colors.white,
 
                     inactiveTickMarkColor: Colors.red.withOpacity(.7),

@@ -20,7 +20,6 @@ class _SplashPageState extends State<SplashPage> {
   ConnectivityResult connectivityResult;
   final Connectivity _connectivity = Connectivity();
 
-  //For subscription to the ConnectivityResult stream
   StreamSubscription<ConnectivityResult> _connectionSubscription;
 
   void startTimeout() {
@@ -40,7 +39,7 @@ class _SplashPageState extends State<SplashPage> {
     } else {
       showDialog(
         context: context,
-        barrierDismissible: false, // user must tap button!
+        barrierDismissible: false,
         builder: (BuildContext context) {
           return AlertDialog(
             title: Text('Uyarı'),

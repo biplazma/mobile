@@ -65,11 +65,8 @@ class _LoginPageState extends State<LoginPage> {
                                     fontSize: 12, fontWeight: FontWeight.bold, color: Theme.of(context).cursorColor, decoration: TextDecoration.underline),
                                 recognizer: TapGestureRecognizer()
                                   ..onTap = () {
-                                    Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                            builder: (context) =>
-                                                WebViewPage('https://biplazma.github.io/privacypolicy/', 'Gizlilik Şartları')));
+                                    Navigator.push(context,
+                                        MaterialPageRoute(builder: (context) => WebViewPage('https://biplazma.github.io/privacypolicy/', 'Gizlilik Şartları')));
                                   },
                               ),
                               TextSpan(text: ' ve ', style: GoogleFonts.openSans(fontSize: 12, fontWeight: FontWeight.bold)),
@@ -82,8 +79,7 @@ class _LoginPageState extends State<LoginPage> {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                            builder: (context) =>
-                                                WebViewPage('https://biplazma.github.io/termsandconditions/', 'Kullanım Koşulları')));
+                                            builder: (context) => WebViewPage('https://biplazma.github.io/termsandconditions/', 'Kullanım Koşulları')));
                                   },
                               ),
                               TextSpan(text: '\'nı kabul etmiş sayılacaksınız.', style: GoogleFonts.openSans(fontSize: 12, fontWeight: FontWeight.bold)),
@@ -114,7 +110,6 @@ class _LoginPageState extends State<LoginPage> {
                             Helper.sizedBoxH100,
                             AutoSizeText('BiPlazma\'ya', textAlign: TextAlign.center, style: AppTextStyles.h3TextStyle),
                             Text('Hoşgeldin', textAlign: TextAlign.center, style: AppTextStyles.h3TextStyle),
-                            //SizedBox(height: 200),
                             Visibility(
                               visible: !isGoogleLogin,
                               child: Form(

@@ -7,7 +7,6 @@ import 'package:biplazma/util/app_textStyles.dart';
 import 'app_colors.dart';
 
 class Helper {
-  //region SharedPref Keys
   static final String _sharedFileName = 'sharedPref';
   static final String _userToken = 'userToken';
   static final String _isRegistered = 'isRegistered';
