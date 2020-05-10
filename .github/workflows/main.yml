@@ -1,6 +1,10 @@
 name: BiPlazma Build & Release
 
-on: push
+on: 
+  push:
+    tags:
+    - '*'
+
 jobs: 
   build-and-test: 
     runs-on: ubuntu-latest
