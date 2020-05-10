@@ -10,16 +10,17 @@ jobs:
       with:
         java-version: '12.x'
     - uses: subosito/flutter-action@v1
-    - run: git clone -b master https://github.com/flutter/flutter.git
+      with:
+        channel: 'beta'
     - run: flutter pub get
     # Run Tests
-    #- run: flutter analyze
-    #- run: flutter test
+    - run: flutter analyze
+    - run: flutter test
     # Build Apk
     - run: flutter build apk
     # Push Apk
     - name: Push APK to Releases
       uses: ncipollo/release-action@v1
       with:
-        artifacts: "build/app/outputs/apk/debug/*.apk"
+        artifacts: "build/app/outputs/apk/release/app-release.apk"
         token: ${{secrets.TOKEN}}
