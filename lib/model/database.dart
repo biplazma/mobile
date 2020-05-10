@@ -12,5 +12,4 @@ class Database {
     var user = User.fromMap(document.data, uid);
     return user;
   }
-
 }
