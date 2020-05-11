@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Adem68",
+      "name": "Adem Furkan ÖZCAN",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/21019611?v=4",
+      "profile": "https://adem68.github.io/",
+      "contributions": [
+        "maintenance"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "mobile",
+  "projectOwner": "biplazma",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
