@@ -1,6 +1,6 @@
 # BiPlazma
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-) [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://opensource.org/licenses/MIT) 
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 BiPlazma is bringing together everyone who needs plasma and who can donate plasma on one platform.
@@ -53,7 +53,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://adem68.github.io/"><img src="https://avatars0.githubusercontent.com/u/21019611?v=4" width="100px;" alt=""/><br /><sub><b>Adem Furkan ÖZCAN</b></sub></a><br /><a href="#maintenance-Adem68" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://adem68.github.io/"><img src="https://avatars0.githubusercontent.com/u/21019611?v=4" width="100px;" alt=""/><br /><sub><b>Adem Furkan ÖZCAN</b></sub></a><br /><a href="#maintenance-Adem68" title="Maintenance">🚧</a> <a href="https://github.com/biplazma/mobile/commits?author=Adem68" title="Code">💻</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/muhammetomer/"><img src="https://avatars1.githubusercontent.com/u/33984759?v=4" width="100px;" alt=""/><br /><sub><b>Muhammet ÖMER</b></sub></a><br /><a href="#design-mukireus" title="Design">🎨</a> <a href="https://github.com/biplazma/mobile/commits?author=mukireus" title="Code">💻</a></td>
     <td align="center"><a href="https://iamfurkan.com"><img src="https://avatars3.githubusercontent.com/u/23127261?v=4" width="100px;" alt=""/><br /><sub><b>Furkan Kaya</b></sub></a><br /><a href="#maintenance-Wijt" title="Maintenance">🚧</a></td>
   </tr>
