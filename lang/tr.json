@@ -1,0 +1,23 @@
+{
+    "biplazma": "BiPlazma",
+    "to_biplazma": "BiPlazma'ya",
+    "welcome": "Hoşgeldin",
+    "welcome_to": "Hoşgeldin",
+    "required": "Bu alan gerekli",
+    "incorrect_mail": "Hatalı email",
+    "enter_mail": "E-mail adresinizi giriniz",
+    "password_less_than_6": "Parolanız 6 karakterden küçük olamaz",
+    "enter_password": "Parolanızı giriniz",
+    "forgot_password": "Parolamı Unuttum",
+    "valid_mail": "Geçerli bir email adresi girmelisiniz.",
+    "reset_mail": "Sıfırlama maili email adresinize gönderildi.",
+    "login_register": "Giriş Yap / Kayıt Ol",
+    "back": "Geri Dön",
+    "continue_mail": "Email ile devam et",
+    "w_google": "Google ile giriş yap",
+    "login_note_start": "Devam etmeniz durumunda ",
+    "login_note_middle": " ve ",
+    "login_note_end": "'nı kabul etmiş sayılırsınız.",
+    "privacy_terms": "Gizlilik Şartları",
+    "conditions_use": "Kullanım Koşulları"
+}

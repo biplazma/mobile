@@ -1,0 +1,23 @@
+{
+    "biplazma": "BiPlazma",
+    "to_biplazma": "BiPlazma",
+    "welcome": "Welcome",
+    "welcome_to": "Welcome to",
+    "required": "This field is required",
+    "incorrect_mail": "Incorrect email",
+    "enter_mail": "Enter your e-mail address",
+    "password_less_than_6": "Your password cannot be less than 6 characters",
+    "enter_password": "Enter your password",
+    "forgot_password": "I forgot my password",
+    "valid_mail": "You must enter a valid e-mail.",
+    "reset_mail": "A reset mail has been sent to your e-mail address.",
+    "login_register": "Login / Register",
+    "back": "Turn Back",
+    "continue_mail": "Continue with email",
+    "w_google": "Sign in with Google",
+    "login_note_start": "By continuing, you agree to the ",
+    "login_note_middle": " and ",
+    "login_note_end": ".",
+    "privacy_terms": "Privacy Terms",
+    "conditions_use": "Conditions of Use"
+}

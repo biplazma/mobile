@@ -38,6 +38,8 @@ dependencies:
   flutter_launcher_icons: ^0.7.5
   loading_indicator: ^1.1.0
   auto_size_text: ^2.1.0
+  flutter_localizations:
+    sdk: flutter
 
 dev_dependencies:
   pedantic: ^1.8.0
@@ -51,6 +53,8 @@ flutter_icons:
 flutter:
   uses-material-design: true
   assets:
+    - lang/tr.json
+    - lang/en.json
     - assets/
     - assets/img/
     - assets/svg/
