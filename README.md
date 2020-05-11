@@ -54,7 +54,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://adem68.github.io/"><img src="https://avatars0.githubusercontent.com/u/21019611?v=4" width="100px;" alt=""/><br /><sub><b>Adem Furkan ÖZCAN</b></sub></a><br /><a href="#maintenance-Adem68" title="Maintenance">🚧</a> <a href="https://github.com/biplazma/mobile/commits?author=Adem68" title="Code">💻</a> <a href="#design-Adem68" title="Design">🎨</a></td>
-    <td align="center"><a href="https://www.linkedin.com/in/muhammetomer/"><img src="https://avatars1.githubusercontent.com/u/33984759?v=4" width="100px;" alt=""/><br /><sub><b>Muhammet ÖMER</b></sub></a><br /><a href="#design-mukireus" title="Design">🎨</a> <a href="https://github.com/biplazma/mobile/commits?author=mukireus" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/muhammetomer/"><img src="https://avatars1.githubusercontent.com/u/33984759?v=4" width="100px;" alt=""/><br /><sub><b>Muhammet ÖMER</b></sub></a><br /><a href="#design-mukireus" title="Design">🎨</a> <a href="https://github.com/biplazma/mobile/commits?author=mukireus" title="Code">💻</a> <a href="#maintenance-mukireus" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://iamfurkan.com"><img src="https://avatars3.githubusercontent.com/u/23127261?v=4" width="100px;" alt=""/><br /><sub><b>Furkan Kaya</b></sub></a><br /><a href="#maintenance-Wijt" title="Maintenance">🚧</a></td>
   </tr>
 </table>
