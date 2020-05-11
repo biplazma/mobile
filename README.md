@@ -19,7 +19,7 @@ Firebase Cloud Firestore
 
 |Android|iOS|Web|Code|
 |--|--|--|--|
-|[Download APK](https://github.com/biplazma/mobile/raw/master/app-release.apk)|Soon|Soon|[Clone the repository](https://github.com/biplazma/mobile/archive/v0.1.2.zip)|
+|[Download APK](https://github.com/biplazma/mobile/releases)|Soon|Soon|[Clone the repository](https://github.com/biplazma/mobile.git)|
 
  If you clone repository, Do not forget the  `flutter pub get` 
 ## v0.1
