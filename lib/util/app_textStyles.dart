@@ -18,4 +18,7 @@ class AppTextStyles {
   static TextStyle get h3TextStyle => GoogleFonts.openSans(color: Colors.white, fontSize: 48, fontWeight: FontWeight.w500);
   static TextStyle get h3BoldTextStyle => GoogleFonts.openSans(color: Colors.white, fontSize: 48, fontWeight: FontWeight.bold);
   static TextStyle get h6TextStyle => GoogleFonts.openSans(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.black);
+
+  static TextStyle get onboardingTitleStyle => GoogleFonts.openSans(fontSize: 28, fontWeight: FontWeight.w700, color: Colors.white);
+  static TextStyle get onboardingBodyStyle => GoogleFonts.openSans(fontSize: 19, color: Colors.white);
 }

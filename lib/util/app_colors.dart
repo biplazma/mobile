@@ -8,6 +8,6 @@ class AppColors {
   static final Color gradient1 = Color(0xffD70652);
   static final Color gradient2 = Color(0xffFF025E);
   static final Color opacity20White = Color(0x20FFFFFF);
-
+  
   static LinearGradient get linearGradient => LinearGradient(colors: <Color>[gradient1, gradient2]);
 }
