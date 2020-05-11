@@ -1,6 +1,6 @@
 # BiPlazma
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 BiPlazma is bringing together everyone who needs plasma and who can donate plasma on one platform.
@@ -51,6 +51,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://adem68.github.io/"><img src="https://avatars0.githubusercontent.com/u/21019611?v=4" width="100px;" alt=""/><br /><sub><b>Adem Furkan ÖZCAN</b></sub></a><br /><a href="#maintenance-Adem68" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/muhammetomer/"><img src="https://avatars1.githubusercontent.com/u/33984759?v=4" width="100px;" alt=""/><br /><sub><b>Muhammet ÖMER</b></sub></a><br /><a href="#design-mukireus" title="Design">🎨</a> <a href="https://github.com/biplazma/mobile/commits?author=mukireus" title="Code">💻</a></td>
   </tr>
 </table>
 
