@@ -59,4 +59,16 @@ class AppConstant {
   static final String loginSnackBarKosulUrl = "https://biplazma.github.io/termsandconditions/";
   // #Login Page
 
+  // Home Page
+  static final String homeSnackBar = "Çıkmak için tekrar basın.";
+  static final String noData = "Veri yok !";
+  static final String now = "Şuan";
+  static final String donation = "Bağışçı";
+  static final String requestPlasma = "Plazma Bekleyen";
+  static final String donatePlasma = "Plazma Bağışla";
+  static final String createRequestPlasma = "Plazma Talebi Oluştur";
+  static final String alertTitle = "Uyarı!";
+  static final String alertDescription = "Plazma talebiniz sistemde bulunuyor. Tekrar oluşturmanıza gerek yok.";
+  static final String ok = "Tamam";
+  // #Home Page
 }

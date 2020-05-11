@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:loading_indicator/loading_indicator.dart';
 import 'package:mdi/mdi.dart';
 import 'package:biplazma/auth_service.dart';
 import 'package:biplazma/home_page.dart';
@@ -45,7 +44,7 @@ class _LoginPageState extends State<LoginPage> {
         body: Center(
           child: Container(
             decoration: BoxDecoration(gradient: AppColors.linearGradient),
-            child: isLoading ? Center(child: _buildLoadingIndicator) : _buildBody,
+            child: isLoading ? Center(child: Helper.buildLoadingIndicator) : _buildBody,
           ),
         ),
       ),
@@ -212,8 +211,6 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   TextSpan buildTextNoPush(String _text) => TextSpan(text: _text, style: AppTextStyles.snackBarTextStyle);
-
-  LoadingIndicator get _buildLoadingIndicator => LoadingIndicator(indicatorType: Indicator.ballScaleMultiple, color: Colors.white);
 
   InputDecoration buildInputDecoration(String _hintText, IconData _icons) {
     return InputDecoration(

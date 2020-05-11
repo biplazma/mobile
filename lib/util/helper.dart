@@ -3,6 +3,7 @@ import 'package:flutter_typeahead/flutter_typeahead.dart';
 import 'package:hive/hive.dart';
 import 'package:biplazma/util/app_constant.dart';
 import 'package:biplazma/util/app_textStyles.dart';
+import 'package:loading_indicator/loading_indicator.dart';
 
 import 'app_colors.dart';
 
@@ -79,6 +80,8 @@ class Helper {
   static SizedBox get sizedBoxH100 => SizedBox(height: 100);
   static SizedBox get sizedBoxW10 => SizedBox(width: 10);
   static SizedBox get sizedBoxW20 => SizedBox(width: 20);
+
+  static LoadingIndicator get buildLoadingIndicator => LoadingIndicator(indicatorType: Indicator.ballScaleMultiple, color: Colors.white);
 
   static InputDecoration appInputDecoration(String _hintText, bool isEnabled) {
     return InputDecoration(
