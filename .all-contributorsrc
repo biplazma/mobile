@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "mukireus",
+      "name": "Muhammet ÖMER",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/33984759?v=4",
+      "profile": "https://www.linkedin.com/in/muhammetomer/",
+      "contributions": [
+        "design",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "mobile",
+  "projectOwner": "biplazma",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
