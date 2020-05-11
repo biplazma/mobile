@@ -1,6 +1,6 @@
 # BiPlazma
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-) [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://opensource.org/licenses/MIT) 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 BiPlazma is bringing together everyone who needs plasma and who can donate plasma on one platform.
@@ -15,10 +15,13 @@ BiPlazma is bringing together everyone who needs plasma and who can donate plasm
 
 Firebase Cloud Firestore
 
-## Download
+## Install
 
-[Apk File](https://github.com/biplazma/mobile/raw/master/app-release.apk)
+|Android|iOS|Web|Code|
+|--|--|--|--|
+|[Download APK](https://github.com/biplazma/mobile/raw/master/app-release.apk)|Soon|Soon|[Clone the repository](https://github.com/biplazma/mobile/archive/v0.1.2.zip)|
 
+ If you clone repository, Do not forget the  `flutter pub get` 
 ## v0.1
 - [x] Google Login
 - [x] Splash
