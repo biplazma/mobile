@@ -21,4 +21,8 @@ class AppTextStyles {
 
   static TextStyle get onboardingTitleStyle => GoogleFonts.openSans(fontSize: 28, fontWeight: FontWeight.w700, color: Colors.white);
   static TextStyle get onboardingBodyStyle => GoogleFonts.openSans(fontSize: 19, color: Colors.white);
+
+  static TextStyle get snackBarTextStyle => GoogleFonts.openSans(fontSize: 12, fontWeight: FontWeight.bold);
+  static TextStyle get snackBarUrlTextStyle =>
+      GoogleFonts.openSans(fontSize: 12, fontWeight: FontWeight.bold, color: AppColors.colorPrimary, decoration: TextDecoration.underline);
 }

@@ -39,66 +39,15 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(statusBarIconBrightness: Brightness.light, statusBarColor: Colors.transparent));
     return WillPopScope(
-      onWillPop: () async {
-        return false;
-      },
+      onWillPop: () async => false,
       child: Scaffold(
         backgroundColor: Colors.black,
-        persistentFooterButtons: <Widget>[
-          Visibility(
-            visible: !isLoading,
-            child: Container(
-                width: MediaQuery.of(context).copyWith().size.width,
-                child: Row(
-                  children: <Widget>[
-                    Expanded(
-                      child: Padding(
-                        padding: const EdgeInsets.only(left: 10, right: 10),
-                        child: RichText(
-                          softWrap: true,
-                          text: TextSpan(
-                            children: [
-                              TextSpan(text: 'Devam etmeniz durumunda ', style: GoogleFonts.openSans(fontSize: 12, fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                text: 'Gizlilik Şartları',
-                                style: GoogleFonts.openSans(
-                                    fontSize: 12, fontWeight: FontWeight.bold, color: Theme.of(context).cursorColor, decoration: TextDecoration.underline),
-                                recognizer: TapGestureRecognizer()
-                                  ..onTap = () {
-                                    Navigator.push(context,
-                                        MaterialPageRoute(builder: (context) => WebViewPage('https://biplazma.github.io/privacypolicy/', 'Gizlilik Şartları')));
-                                  },
-                              ),
-                              TextSpan(text: ' ve ', style: GoogleFonts.openSans(fontSize: 12, fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                text: 'Kullanım Koşulları',
-                                style:
-                                    GoogleFonts.openSans(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.blue, decoration: TextDecoration.underline),
-                                recognizer: TapGestureRecognizer()
-                                  ..onTap = () {
-                                    Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                            builder: (context) => WebViewPage('https://biplazma.github.io/termsandconditions/', 'Kullanım Koşulları')));
-                                  },
-                              ),
-                              TextSpan(text: '\'nı kabul etmiş sayılacaksınız.', style: GoogleFonts.openSans(fontSize: 12, fontWeight: FontWeight.bold)),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                )),
-          ),
-        ],
+        persistentFooterButtons: <Widget>[buildSnackBar()],
         body: Center(
           child: Container(
             decoration: BoxDecoration(gradient: AppColors.linearGradient),
             child: isLoading
-                ? Center(
-                    child: LoadingIndicator(indicatorType: Indicator.ballScaleMultiple, color: Colors.white),
-                  )
+                ? Center(child: _buildLoadingIndicator)
                 : Center(
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 42.0),
@@ -108,8 +57,8 @@ class _LoginPageState extends State<LoginPage> {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: <Widget>[
                             Helper.sizedBoxH100,
-                            AutoSizeText('BiPlazma\'ya', textAlign: TextAlign.center, style: AppTextStyles.h3TextStyle),
-                            Text('Hoşgeldin', textAlign: TextAlign.center, style: AppTextStyles.h3TextStyle),
+                            AutoSizeText(AppConstant.appName + '\'ya', textAlign: TextAlign.center, style: AppTextStyles.h3TextStyle),
+                            Text(AppConstant.loginWelcome, textAlign: TextAlign.center, style: AppTextStyles.h3TextStyle),
                             Visibility(
                               visible: !isGoogleLogin,
                               child: Form(
@@ -242,77 +191,9 @@ class _LoginPageState extends State<LoginPage> {
                                     ),
                                   ])),
                             ),
-                            Visibility(
-                              visible: isGoogleLogin,
-                              child: Padding(
-                                padding: EdgeInsets.only(top: 100.0),
-                                child: MaterialButton(
-                                  minWidth: double.infinity,
-                                  height: 42,
-                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
-                                  color: Colors.white,
-                                  child: Text("Email ile devam et", style: AppTextStyles.buttonTextStyle),
-                                  onPressed: () {
-                                    setState(() {
-                                      isGoogleLogin = false;
-                                    });
-                                  },
-                                ),
-                              ),
-                            ),
-                            Visibility(
-                                visible: isGoogleLogin,
-                                child: Padding(
-                                  padding: EdgeInsets.only(top: 20.0),
-                                  child: MaterialButton(
-                                    minWidth: double.infinity,
-                                    height: 42,
-                                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
-                                    color: Colors.white,
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: <Widget>[
-                                        SvgPicture.asset(AppConstant.svgGoogleLogo, height: 20),
-                                        Padding(
-                                          padding: const EdgeInsets.only(left: 20),
-                                          child: Text('Google ile giriş yap',
-                                              style: GoogleFonts.openSans(color: Color(0xffF3035A), fontSize: 16, fontWeight: FontWeight.bold)),
-                                        )
-                                      ],
-                                    ),
-                                    onPressed: () async {
-                                      setState(() {
-                                        isLoading = true;
-                                      });
-                                      try {
-                                        final user = await authService.googleSignIn();
-                                        if (user != null) {
-                                          var userData = await Firestore.instance.collection("users").document(user.uid).get();
-                                          var age = userData.data['age'];
-                                          setState(() {
-                                            isLoading = false;
-                                          });
-                                          if (age != null) {
-                                            Helper.setRegister(true);
-                                            Helper.setUserToken(user.uid);
-                                            Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context) => HomePage()), (r) => false);
-                                          } else {
-                                            Navigator.pushAndRemoveUntil(
-                                                context,
-                                                MaterialPageRoute(
-                                                    builder: (context) => RegisterPage(
-                                                          username: user.displayName,
-                                                          isGoogleLogin: true,
-                                                        )),
-                                                (r) => false);
-                                          }
-                                        }
-                                      } catch (e) {}
-                                    },
-                                  ),
-                                )),
+                            Helper.sizedBoxH100,
+                            buildButton(AppConstant.loginEmailButton, isEmailLoginFunc, false),
+                            buildButton(AppConstant.loginGoogleButton, isGoogleLoginFunc, true),
                           ],
                         ),
                       ),
@@ -323,6 +204,102 @@ class _LoginPageState extends State<LoginPage> {
       ),
     );
   }
+
+  void isEmailLoginFunc() => setState(() {
+        isGoogleLogin = false;
+      });
+
+  Future<void> isGoogleLoginFunc() async {
+    print("test");
+    setState(() {
+      isLoading = true;
+    });
+    try {
+      final user = await authService.googleSignIn();
+      if (user != null) {
+        var userData = await Firestore.instance.collection("users").document(user.uid).get();
+        var age = userData.data['age'];
+        setState(() {
+          isLoading = false;
+        });
+        if (age != null) {
+          Helper.setRegister(true);
+          Helper.setUserToken(user.uid);
+          Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context) => HomePage()), (r) => false);
+        } else {
+          Navigator.pushAndRemoveUntil(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => RegisterPage(
+                        username: user.displayName,
+                        isGoogleLogin: true,
+                      )),
+              (r) => false);
+        }
+      }
+    } catch (e) {}
+  }
+
+  Widget buildButton(String _buttonTitle, void _function, bool _isGoogle) {
+    return Visibility(
+      visible: isGoogleLogin,
+      child: Padding(
+        padding: EdgeInsets.only(top: 10.0),
+        child: MaterialButton(
+          minWidth: double.infinity,
+          height: 42,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
+          color: Colors.white,
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Visibility(visible: _isGoogle, child: SvgPicture.asset(AppConstant.svgGoogleLogo, height: 20)),
+              Padding(padding: const EdgeInsets.only(left: 20), child: Text(_buttonTitle, style: AppTextStyles.buttonTextStyle))
+            ],
+          ),
+          onPressed: () => _function,
+        ),
+      ),
+    );
+  }
+
+  Visibility buildSnackBar() {
+    return Visibility(
+      visible: !isLoading,
+      child: Container(
+          width: MediaQuery.of(context).copyWith().size.width,
+          child: Expanded(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: RichText(
+                softWrap: true,
+                text: TextSpan(
+                  children: [
+                    buildTextNoPush(AppConstant.loginSnackBarDevam),
+                    buildTextPush(AppConstant.loginSnackBarGizlilik, AppConstant.loginSnackBarSartUrl),
+                    buildTextNoPush(' ve '),
+                    buildTextPush(AppConstant.loginSnackBarKullanim, AppConstant.loginSnackBarKosulUrl),
+                    buildTextNoPush(AppConstant.loginSnackBarKabul),
+                  ],
+                ),
+              ),
+            ),
+          )),
+    );
+  }
+
+  TextSpan buildTextPush(String _text, String _webUrl) {
+    return TextSpan(
+      text: _text,
+      style: AppTextStyles.snackBarUrlTextStyle,
+      recognizer: TapGestureRecognizer()..onTap = () => Navigator.push(context, MaterialPageRoute(builder: (context) => WebViewPage(_webUrl, _text))),
+    );
+  }
+
+  TextSpan buildTextNoPush(String _text) => TextSpan(text: _text, style: AppTextStyles.snackBarTextStyle);
+  LoadingIndicator get _buildLoadingIndicator => LoadingIndicator(indicatorType: Indicator.ballScaleMultiple, color: Colors.white);
 
   OutlineInputBorder buildOutlineInputBorder() =>
       OutlineInputBorder(borderRadius: const BorderRadius.all(const Radius.circular(30.0)), borderSide: BorderSide(color: Colors.white));

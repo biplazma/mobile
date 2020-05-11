@@ -26,7 +26,20 @@ class AppConstant {
 
   static final String onboardingSkip = "Atla";
   static final String onboardingDone = "Bitir";
-
   // #Onboarding Page
+
+  // Login Page
+  static final String loginWelcome = "Hoşgeldin";
+  static final String loginEmailButton = "Email ile devam et";
+  static final String loginGoogleButton = "Google ile giriş yap";
+
+  static final String loginSnackBarDevam = "Devam etmeniz durumunda ";
+  static final String loginSnackBarGizlilik = "Gizlilik Şartları";
+  static final String loginSnackBarKullanim = "Kullanım Koşulları";
+  static final String loginSnackBarKabul = "\'nı kabul etmiş sayılacaksınız.";
+
+  static final String loginSnackBarSartUrl = "https://biplazma.github.io/privacypolicy/";
+  static final String loginSnackBarKosulUrl = "https://biplazma.github.io/termsandconditions/";
+  // #Login Page
 
 }
