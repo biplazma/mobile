@@ -74,9 +74,9 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
       showSkipButton: true,
       skipFlex: 0,
       nextFlex: 0,
-      skip: Text(AppConstant.onboardingSkip, style: TextStyle(color: Colors.white)),
+      skip: Text(AppConstant.skip, style: TextStyle(color: Colors.white)),
       next: Icon(Icons.arrow_forward, color: Colors.white),
-      done: Text(AppConstant.onboardingDone, style: TextStyle(fontWeight: FontWeight.w600, color: Colors.white)),
+      done: Text(AppConstant.done, style: TextStyle(fontWeight: FontWeight.w600, color: Colors.white)),
       dotsDecorator: dotDecorator,
     );
   }

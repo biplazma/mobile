@@ -8,6 +8,9 @@ class AppConstant {
   static bool isPlasmaRequested = false;
   static bool donateAgreement = false;
 
+  static final String regexRegister =
+      r'^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$';
+
   // Onboarding Page
   static final String onboardingTitle1 = "Plazma Bağışla";
   static final String onboardingTitle2 = "Sosyal Mesafeni Koru";
@@ -24,14 +27,28 @@ class AppConstant {
   static final String onboardingAnimation3 = "assets/json/anim/tektik.json";
   static final String onboardingAnimation4 = "assets/json/anim/belirti.json";
 
-  static final String onboardingSkip = "Atla";
-  static final String onboardingDone = "Bitir";
+  static final String skip = "Atla";
+  static final String done = "Bitir";
   // #Onboarding Page
 
   // Login Page
-  static final String loginWelcome = "Hoşgeldin";
+  static final String welcome = "Hoşgeldin";
   static final String loginEmailButton = "Email ile devam et";
   static final String loginGoogleButton = "Google ile giriş yap";
+  static final String loginRegister = "Giriş Yap / Kayıt Ol";
+  static final String forgetPassword = "Şifremi Unuttum";
+  static final String logi = "Giriş Yap / Kayıt Ol";
+  static final String back = "Geri Dön";
+
+  static final String enterEmail = "E-mail adresinizi giriniz";
+  static final String enterPassword = "Şifrenizi giriniz";
+  static final String fieldRequired = "Bu alan gerekli";
+  static final String errorEmail = "Bu alan gerekli";
+  static final String errorPassword = "Şifreniz 8 karakterden küçük olamaz";
+  static final String error = "Bir şeyler ters gitti";
+  static final String noFindMail = "Geçerli bir e-mail girmelisiniz.";
+  static final String wrongMail = "Hatalı email!";
+  static final String sentMail = "E-mail adresinize sıfırlama maili gönderildi.";
 
   static final String loginSnackBarDevam = "Devam etmeniz durumunda ";
   static final String loginSnackBarGizlilik = "Gizlilik Şartları";
