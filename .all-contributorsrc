@@ -1,0 +1,46 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Adem68",
+      "name": "Adem Furkan ÖZCAN",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/21019611?v=4",
+      "profile": "https://adem68.github.io/",
+      "contributions": [
+        "maintenance",
+        "code",
+        "design"
+      ]
+    },
+    {
+      "login": "mukireus",
+      "name": "Muhammet ÖMER",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/33984759?v=4",
+      "profile": "https://www.linkedin.com/in/muhammetomer/",
+      "contributions": [
+        "design",
+        "code",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "Wijt",
+      "name": "Furkan Kaya",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/23127261?v=4",
+      "profile": "https://iamfurkan.com",
+      "contributions": [
+        "maintenance"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "mobile",
+  "projectOwner": "biplazma",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
