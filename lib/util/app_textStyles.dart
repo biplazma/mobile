@@ -13,7 +13,8 @@ class AppTextStyles {
   static TextStyle get selectTextStyle => GoogleFonts.openSans(color: AppColors.colorPrimary, fontSize: 18, fontWeight: FontWeight.bold);
   static TextStyle get containerTextStyle => GoogleFonts.openSans(color: Colors.white, fontSize: 14);
   static TextStyle get buttonTextStyle => GoogleFonts.openSans(fontSize: 16, fontWeight: FontWeight.bold, foreground: Paint()..shader = linearGradient);
-  static TextStyle get appBarTextStyle => GoogleFonts.openSans(fontSize: 20, fontWeight: FontWeight.bold);
+  static TextStyle get appBarTextStyle => GoogleFonts.openSans(fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold);
+  static TextStyle get logoutBTNTextStyle => GoogleFonts.openSans(color: Colors.white, fontSize: 14, fontWeight: FontWeight.bold);
 
   static TextStyle get h3TextStyle => GoogleFonts.openSans(color: Colors.white, fontSize: 48, fontWeight: FontWeight.w500);
   static TextStyle get h3BoldTextStyle => GoogleFonts.openSans(color: Colors.white, fontSize: 48, fontWeight: FontWeight.bold);

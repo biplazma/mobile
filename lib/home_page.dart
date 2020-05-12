@@ -125,7 +125,7 @@ class _HomePageState extends State<HomePage> {
       width: MediaQuery.of(context).size.width,
       child: RaisedButton(
         color: Colors.white,
-        elevation: ,
+        elevation: 3,
         shape: StadiumBorder(),
         onPressed: onPressed,
         child: Text(buttonTitle, style: AppTextStyles.buttonTextStyle),

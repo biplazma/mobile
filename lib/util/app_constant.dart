@@ -71,4 +71,14 @@ class AppConstant {
   static final String alertDescription = "Plazma talebiniz sistemde bulunuyor. Tekrar oluşturmanıza gerek yok.";
   static final String ok = "Tamam";
   // #Home Page
+
+  // Settings Page
+  static final String twitterURL = "https://twitter.com/Flutter_Turkiye";
+  static final String githubURL = "https://github.com/biplazma";
+  static final String github = "Github";
+  static final String contributors = "Katkıda Bulunanlar";
+  static final String logout = "Çıkış Yap";
+  static final String settingsSnackBarDesc = "Coded with 💙 in Turkey 🇹🇷";
+  // #Settings Page
+
 }
