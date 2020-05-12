@@ -10,7 +10,8 @@ class AppColors {
   static final Color opacity20White = Color(0x20FFFFFF);
 
   static final Color githubBoxColor = Color(0xFF24292E);
-  static final Color contributorsBoxColor  = Color(0xFF2A5078);
+  static final Color contributorsBoxColor = Color(0xFF2A5078);
+  static final Color infoBoxColor = Color(0xFFFE3686);
 
   static LinearGradient get linearGradient => LinearGradient(colors: <Color>[gradient1, gradient2]);
 }

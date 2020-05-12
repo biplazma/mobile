@@ -35,6 +35,8 @@ class _SettingsPageState extends State<SettingsPage> {
             buildMaterialButton(AppConstant.github, Mdi.github, AppColors.githubBoxColor, launchGitHub),
             Helper.sizedBoxH20,
             buildMaterialButton(AppConstant.contributors, Mdi.accountGroup, AppColors.contributorsBoxColor, pushContributorsPage),
+            Helper.sizedBoxH20,
+            buildMaterialButton(AppConstant.appInfo, Icons.info, AppColors.colorPrimary, _onInfoButtonPressed),
             Spacer(),
             _buildLogoutButton,
           ],
@@ -61,7 +63,7 @@ class _SettingsPageState extends State<SettingsPage> {
 
   MaterialButton buildMaterialButton(String _title, IconData _icon, Color _color, Function _function) {
     return MaterialButton(
-      height: MediaQuery.of(context).size.height * 0.13,
+      height: MediaQuery.of(context).size.height * 0.1,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
       onPressed: () => _function(),
       color: _color,
@@ -83,10 +85,41 @@ class _SettingsPageState extends State<SettingsPage> {
     );
   }
 
+  Widget get _buildDrawerItem => Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: <Widget>[
+          Helper.pullDown(Colors.white70),
+          Text(AppConstant.appName, style: AppTextStyles.titleStyle),
+          Text(AppConstant.appDescription, style: TextStyle(fontSize: 14, color: Colors.white)),
+          Helper.sizedBoxH10,
+          Text(AppConstant.appVersion, style: TextStyle(fontSize: 13, color: Colors.white70)),
+        ],
+      );
+
+  static BoxDecoration get bottomSheetBoxDecoration => BoxDecoration(
+        gradient: AppColors.linearGradient,
+        borderRadius: BorderRadius.only(topLeft: const Radius.circular(15.0), topRight: const Radius.circular(15.0)),
+      );
+
   void pushContributorsPage() => Navigator.push(context, MaterialPageRoute(builder: (context) => ContributorsPage()));
 
   launchGitHub() async => (await canLaunch(AppConstant.githubURL) == true) ? await launch(AppConstant.githubURL) : throw 'Could not launch URL';
   launchURL(String url) async => (await canLaunch(url) == true) ? await launch(url) : throw 'Could not launch $url';
+
+  void _onInfoButtonPressed() {
+    try {
+      FocusScope.of(context).unfocus();
+    } catch (e) {}
+    showModalBottomSheet(
+        context: context,
+        backgroundColor: Colors.transparent,
+        builder: (context) {
+          return Container(
+            height: MediaQuery.of(context).size.height * 0.25,
+            child: Container(child: _buildDrawerItem, decoration: bottomSheetBoxDecoration),
+          );
+        });
+  }
 
   void logout() {
     authService.signOut();

@@ -1,5 +1,7 @@
 class AppConstant {
   static const String appName = 'BiPlazma';
+  static const String appDescription = 'BiPlazma developed for Google Solution Marathon Contest';
+  static const String appVersion = "v0.1";
   static final String svgGoogleLogo = "assets/svg/google_logo.svg";
   static final String svgMale = "assets/svg/male.svg";
   static final String svgFemale = "assets/svg/female.svg";
@@ -78,6 +80,7 @@ class AppConstant {
   static final String github = "Github";
   static final String contributors = "Katkıda Bulunanlar";
   static final String logout = "Çıkış Yap";
+  static final String appInfo = "Uygulama Hakkında";
   static final String settingsSnackBarDesc = "Coded with 💙 in Turkey 🇹🇷";
   // #Settings Page
 
